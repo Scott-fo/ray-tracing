@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++14 -o CMakeFiles/rt.dir/src/rt.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/rt.cpp",
+  "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/rt.cpp"
+}
+]
