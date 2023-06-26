@@ -43,6 +43,8 @@ hittable.h
 ../include/hittable.h
 ray.h
 ../include/ray.h
+utils.h
+../include/utils.h
 vec3.h
 ../include/vec3.h
 
