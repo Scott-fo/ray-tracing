@@ -111,44 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rt
+# Target rules for targets named main
 
 # Build rule for target.
-rt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rt
-.PHONY : rt
+main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 main
+.PHONY : main
 
 # fast build rule for target.
-rt/fast:
-	$(MAKE) -f CMakeFiles/rt.dir/build.make CMakeFiles/rt.dir/build
-.PHONY : rt/fast
+main/fast:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
+.PHONY : main/fast
 
-src/rt.o: src/rt.cpp.o
+src/main.o: src/main.cpp.o
 
-.PHONY : src/rt.o
+.PHONY : src/main.o
 
 # target to build an object file
-src/rt.cpp.o:
-	$(MAKE) -f CMakeFiles/rt.dir/build.make CMakeFiles/rt.dir/src/rt.cpp.o
-.PHONY : src/rt.cpp.o
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-src/rt.i: src/rt.cpp.i
+src/main.i: src/main.cpp.i
 
-.PHONY : src/rt.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-src/rt.cpp.i:
-	$(MAKE) -f CMakeFiles/rt.dir/build.make CMakeFiles/rt.dir/src/rt.cpp.i
-.PHONY : src/rt.cpp.i
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-src/rt.s: src/rt.cpp.s
+src/main.s: src/main.cpp.s
 
-.PHONY : src/rt.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-src/rt.cpp.s:
-	$(MAKE) -f CMakeFiles/rt.dir/build.make CMakeFiles/rt.dir/src/rt.cpp.s
-.PHONY : src/rt.cpp.s
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/moving_sphere.o: src/moving_sphere.cpp.o
+
+.PHONY : src/moving_sphere.o
+
+# target to build an object file
+src/moving_sphere.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/moving_sphere.cpp.o
+.PHONY : src/moving_sphere.cpp.o
+
+src/moving_sphere.i: src/moving_sphere.cpp.i
+
+.PHONY : src/moving_sphere.i
+
+# target to preprocess a source file
+src/moving_sphere.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/moving_sphere.cpp.i
+.PHONY : src/moving_sphere.cpp.i
+
+src/moving_sphere.s: src/moving_sphere.cpp.s
+
+.PHONY : src/moving_sphere.s
+
+# target to generate assembly for a file
+src/moving_sphere.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/moving_sphere.cpp.s
+.PHONY : src/moving_sphere.cpp.s
 
 # Help Target
 help:
@@ -158,10 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... rt"
-	@echo "... src/rt.o"
-	@echo "... src/rt.i"
-	@echo "... src/rt.s"
+	@echo "... main"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/moving_sphere.o"
+	@echo "... src/moving_sphere.i"
+	@echo "... src/moving_sphere.s"
 .PHONY : help
 
 
