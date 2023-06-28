@@ -1,5 +1,12 @@
 #include "sphere.h"
 
+sphere::sphere() {}
+
+sphere::sphere(point3 cen, double r, shared_ptr<material> m)
+    : center(cen), radius(r), mat_ptr(m){};
+
+sphere::~sphere() {}
+
 bool sphere::hit(const ray &r, double t_min, double t_max,
                  hit_record &rec) const {
   vec3 oc = r.origin() - center;
