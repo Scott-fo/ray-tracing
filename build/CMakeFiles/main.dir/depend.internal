@@ -16,6 +16,12 @@ CMakeFiles/main.dir/src/bvh.cpp.o
  ../include/utils.h
  ../include/vec3.h
  /home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp
+CMakeFiles/main.dir/src/camera.cpp.o
+ ../include/camera.h
+ ../include/ray.h
+ ../include/utils.h
+ ../include/vec3.h
+ /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp
 CMakeFiles/main.dir/src/hittable_list.cpp.o
  ../include/aabb.h
  ../include/hittable.h

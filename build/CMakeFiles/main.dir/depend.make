@@ -16,6 +16,12 @@ CMakeFiles/main.dir/src/bvh.cpp.o: ../include/utils.h
 CMakeFiles/main.dir/src/bvh.cpp.o: ../include/vec3.h
 CMakeFiles/main.dir/src/bvh.cpp.o: ../src/bvh.cpp
 
+CMakeFiles/main.dir/src/camera.cpp.o: ../include/camera.h
+CMakeFiles/main.dir/src/camera.cpp.o: ../include/ray.h
+CMakeFiles/main.dir/src/camera.cpp.o: ../include/utils.h
+CMakeFiles/main.dir/src/camera.cpp.o: ../include/vec3.h
+CMakeFiles/main.dir/src/camera.cpp.o: ../src/camera.cpp
+
 CMakeFiles/main.dir/src/hittable_list.cpp.o: ../include/aabb.h
 CMakeFiles/main.dir/src/hittable_list.cpp.o: ../include/hittable.h
 CMakeFiles/main.dir/src/hittable_list.cpp.o: ../include/hittable_list.h

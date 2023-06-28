@@ -83,9 +83,22 @@ CMakeFiles/main.dir/src/bvh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/bvh.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp -o CMakeFiles/main.dir/src/bvh.cpp.s
 
+CMakeFiles/main.dir/src/camera.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/camera.cpp.o: ../src/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/camera.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/camera.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp
+
+CMakeFiles/main.dir/src/camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/camera.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp > CMakeFiles/main.dir/src/camera.cpp.i
+
+CMakeFiles/main.dir/src/camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/camera.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp -o CMakeFiles/main.dir/src/camera.cpp.s
+
 CMakeFiles/main.dir/src/hittable_list.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/hittable_list.cpp.o: ../src/hittable_list.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/hittable_list.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/hittable_list.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/hittable_list.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable_list.cpp
 
 CMakeFiles/main.dir/src/hittable_list.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/main.dir/src/hittable_list.cpp.s: cmake_force
 
 CMakeFiles/main.dir/src/main.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/main.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/main.cpp
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 
 CMakeFiles/main.dir/src/moving_sphere.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/moving_sphere.cpp.o: ../src/moving_sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/moving_sphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/moving_sphere.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/moving_sphere.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/moving_sphere.cpp
 
 CMakeFiles/main.dir/src/moving_sphere.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/main.dir/src/moving_sphere.cpp.s: cmake_force
 
 CMakeFiles/main.dir/src/sphere.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/sphere.cpp.o: ../src/sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/sphere.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/sphere.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/sphere.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/sphere.cpp
 
 CMakeFiles/main.dir/src/sphere.cpp.i: cmake_force
@@ -139,6 +152,7 @@ CMakeFiles/main.dir/src/sphere.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/aabb.cpp.o" \
 "CMakeFiles/main.dir/src/bvh.cpp.o" \
+"CMakeFiles/main.dir/src/camera.cpp.o" \
 "CMakeFiles/main.dir/src/hittable_list.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
 "CMakeFiles/main.dir/src/moving_sphere.cpp.o" \
@@ -149,13 +163,14 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/src/aabb.cpp.o
 main: CMakeFiles/main.dir/src/bvh.cpp.o
+main: CMakeFiles/main.dir/src/camera.cpp.o
 main: CMakeFiles/main.dir/src/hittable_list.cpp.o
 main: CMakeFiles/main.dir/src/main.cpp.o
 main: CMakeFiles/main.dir/src/moving_sphere.cpp.o
 main: CMakeFiles/main.dir/src/sphere.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

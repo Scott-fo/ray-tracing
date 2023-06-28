@@ -177,6 +177,33 @@ src/bvh.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bvh.cpp.s
 .PHONY : src/bvh.cpp.s
 
+src/camera.o: src/camera.cpp.o
+
+.PHONY : src/camera.o
+
+# target to build an object file
+src/camera.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.o
+.PHONY : src/camera.cpp.o
+
+src/camera.i: src/camera.cpp.i
+
+.PHONY : src/camera.i
+
+# target to preprocess a source file
+src/camera.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.i
+.PHONY : src/camera.cpp.i
+
+src/camera.s: src/camera.cpp.s
+
+.PHONY : src/camera.s
+
+# target to generate assembly for a file
+src/camera.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.s
+.PHONY : src/camera.cpp.s
+
 src/hittable_list.o: src/hittable_list.cpp.o
 
 .PHONY : src/hittable_list.o
@@ -300,6 +327,9 @@ help:
 	@echo "... src/bvh.o"
 	@echo "... src/bvh.i"
 	@echo "... src/bvh.s"
+	@echo "... src/camera.o"
+	@echo "... src/camera.i"
+	@echo "... src/camera.s"
 	@echo "... src/hittable_list.o"
 	@echo "... src/hittable_list.i"
 	@echo "... src/hittable_list.s"

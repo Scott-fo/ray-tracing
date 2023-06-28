@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/aabb.cpp.o"
   "CMakeFiles/main.dir/src/bvh.cpp.o"
+  "CMakeFiles/main.dir/src/camera.cpp.o"
   "CMakeFiles/main.dir/src/hittable_list.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/moving_sphere.cpp.o"
