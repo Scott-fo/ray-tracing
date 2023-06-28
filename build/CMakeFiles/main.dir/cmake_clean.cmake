@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/hittable_list.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/moving_sphere.cpp.o"
+  "CMakeFiles/main.dir/src/ray.cpp.o"
   "CMakeFiles/main.dir/src/sphere.cpp.o"
   "main"
   "main.pdb"

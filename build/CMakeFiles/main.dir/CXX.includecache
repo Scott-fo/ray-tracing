@@ -38,7 +38,7 @@ utils.h
 vec3.h
 ../include/vec3.h
 
-../include/color.h
+../include/colour.h
 utils.h
 ../include/utils.h
 vec3.h
@@ -122,17 +122,37 @@ math.h
 ostream
 -
 
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.cpp
+aabb.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.h
+
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp
+bvh.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.h
+aabb.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.h
+hittable.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable.h
+algorithm
+-
+
 /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp
 camera.h
 /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.h
+
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable_list.cpp
+hittable_list.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable_list.h
+aabb.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.h
 
 /home/scottfo/Projects/languages/cpp/ray_tracing/src/main.cpp
 bvh.h
 /home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.h
 camera.h
 /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.h
-color.h
-/home/scottfo/Projects/languages/cpp/ray_tracing/src/color.h
+colour.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/colour.h
 hittable.h
 /home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable.h
 hittable_list.h
@@ -153,4 +173,18 @@ iostream
 -
 memory
 -
+
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/moving_sphere.cpp
+moving_sphere.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/moving_sphere.h
+aabb.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.h
+
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/ray.cpp
+ray.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/ray.h
+
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/sphere.cpp
+sphere.h
+/home/scottfo/Projects/languages/cpp/ray_tracing/src/sphere.h
 

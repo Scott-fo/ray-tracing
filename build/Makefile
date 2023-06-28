@@ -285,6 +285,33 @@ src/moving_sphere.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/moving_sphere.cpp.s
 .PHONY : src/moving_sphere.cpp.s
 
+src/ray.o: src/ray.cpp.o
+
+.PHONY : src/ray.o
+
+# target to build an object file
+src/ray.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ray.cpp.o
+.PHONY : src/ray.cpp.o
+
+src/ray.i: src/ray.cpp.i
+
+.PHONY : src/ray.i
+
+# target to preprocess a source file
+src/ray.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ray.cpp.i
+.PHONY : src/ray.cpp.i
+
+src/ray.s: src/ray.cpp.s
+
+.PHONY : src/ray.s
+
+# target to generate assembly for a file
+src/ray.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ray.cpp.s
+.PHONY : src/ray.cpp.s
+
 src/sphere.o: src/sphere.cpp.o
 
 .PHONY : src/sphere.o
@@ -339,6 +366,9 @@ help:
 	@echo "... src/moving_sphere.o"
 	@echo "... src/moving_sphere.i"
 	@echo "... src/moving_sphere.s"
+	@echo "... src/ray.o"
+	@echo "... src/ray.i"
+	@echo "... src/ray.s"
 	@echo "... src/sphere.o"
 	@echo "... src/sphere.i"
 	@echo "... src/sphere.s"
