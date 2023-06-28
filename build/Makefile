@@ -123,6 +123,87 @@ main/fast:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/aabb.o: src/aabb.cpp.o
+
+.PHONY : src/aabb.o
+
+# target to build an object file
+src/aabb.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aabb.cpp.o
+.PHONY : src/aabb.cpp.o
+
+src/aabb.i: src/aabb.cpp.i
+
+.PHONY : src/aabb.i
+
+# target to preprocess a source file
+src/aabb.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aabb.cpp.i
+.PHONY : src/aabb.cpp.i
+
+src/aabb.s: src/aabb.cpp.s
+
+.PHONY : src/aabb.s
+
+# target to generate assembly for a file
+src/aabb.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aabb.cpp.s
+.PHONY : src/aabb.cpp.s
+
+src/bvh.o: src/bvh.cpp.o
+
+.PHONY : src/bvh.o
+
+# target to build an object file
+src/bvh.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bvh.cpp.o
+.PHONY : src/bvh.cpp.o
+
+src/bvh.i: src/bvh.cpp.i
+
+.PHONY : src/bvh.i
+
+# target to preprocess a source file
+src/bvh.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bvh.cpp.i
+.PHONY : src/bvh.cpp.i
+
+src/bvh.s: src/bvh.cpp.s
+
+.PHONY : src/bvh.s
+
+# target to generate assembly for a file
+src/bvh.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/bvh.cpp.s
+.PHONY : src/bvh.cpp.s
+
+src/hittable_list.o: src/hittable_list.cpp.o
+
+.PHONY : src/hittable_list.o
+
+# target to build an object file
+src/hittable_list.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hittable_list.cpp.o
+.PHONY : src/hittable_list.cpp.o
+
+src/hittable_list.i: src/hittable_list.cpp.i
+
+.PHONY : src/hittable_list.i
+
+# target to preprocess a source file
+src/hittable_list.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hittable_list.cpp.i
+.PHONY : src/hittable_list.cpp.i
+
+src/hittable_list.s: src/hittable_list.cpp.s
+
+.PHONY : src/hittable_list.s
+
+# target to generate assembly for a file
+src/hittable_list.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hittable_list.cpp.s
+.PHONY : src/hittable_list.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -177,6 +258,33 @@ src/moving_sphere.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/moving_sphere.cpp.s
 .PHONY : src/moving_sphere.cpp.s
 
+src/sphere.o: src/sphere.cpp.o
+
+.PHONY : src/sphere.o
+
+# target to build an object file
+src/sphere.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/sphere.cpp.o
+.PHONY : src/sphere.cpp.o
+
+src/sphere.i: src/sphere.cpp.i
+
+.PHONY : src/sphere.i
+
+# target to preprocess a source file
+src/sphere.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/sphere.cpp.i
+.PHONY : src/sphere.cpp.i
+
+src/sphere.s: src/sphere.cpp.s
+
+.PHONY : src/sphere.s
+
+# target to generate assembly for a file
+src/sphere.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/sphere.cpp.s
+.PHONY : src/sphere.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... main"
+	@echo "... src/aabb.o"
+	@echo "... src/aabb.i"
+	@echo "... src/aabb.s"
+	@echo "... src/bvh.o"
+	@echo "... src/bvh.i"
+	@echo "... src/bvh.s"
+	@echo "... src/hittable_list.o"
+	@echo "... src/hittable_list.i"
+	@echo "... src/hittable_list.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
 	@echo "... src/moving_sphere.o"
 	@echo "... src/moving_sphere.i"
 	@echo "... src/moving_sphere.s"
+	@echo "... src/sphere.o"
+	@echo "... src/sphere.i"
+	@echo "... src/sphere.s"
 .PHONY : help
 
 
