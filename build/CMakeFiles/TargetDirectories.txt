@@ -1,3 +1,0 @@
-/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles/rebuild_cache.dir
-/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles/edit_cache.dir
-/home/scottfo/Projects/languages/cpp/ray_tracing/build/CMakeFiles/main.dir

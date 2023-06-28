@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/rt.dir/src/rt.cpp.o  -o rt 
