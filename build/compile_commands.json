@@ -1,57 +1,57 @@
 [
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/aabb.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/aabb.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/aabb.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/bvh.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/bvh.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/camera.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/camera.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/hittable_list.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable_list.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/hittable_list.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable_list.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable_list.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/main.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/main.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/main.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/main.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/main.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/moving_sphere.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/moving_sphere.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/moving_sphere.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/moving_sphere.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/moving_sphere.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/perlin.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/perlin.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/perlin.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/perlin.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/perlin.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/ray.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/ray.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/ray.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/ray.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/ray.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/scene.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/scene.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/scene.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/scene.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/scene.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/sphere.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/sphere.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/sphere.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/sphere.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/sphere.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
-  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/texture.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/texture.cpp",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/texture.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/texture.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/texture.cpp"
 }
 ]
