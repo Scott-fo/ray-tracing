@@ -6,5 +6,6 @@
 hittable_list random_scene();
 hittable_list two_spheres();
 hittable_list two_perlin_spheres();
+hittable_list earth();
 
 #endif

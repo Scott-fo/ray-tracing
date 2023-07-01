@@ -6,6 +6,7 @@
 #include "sphere.h"
 #include "texture.h"
 #include "utils.h"
+#include "vec3.h"
 
 hittable_list random_scene() {
   hittable_list world;
@@ -78,4 +79,12 @@ hittable_list two_perlin_spheres() {
                                   make_shared<lambertian>(pertext)));
 
   return objects;
+}
+
+hittable_list earth() {
+  auto earth_texture = make_shared<image_texture>("../images/earthmap.jpg");
+  auto earth_surface = make_shared<lambertian>(earth_texture);
+  auto globe = make_shared<sphere>(point3(0, 0, 0), 2, earth_surface);
+
+  return hittable_list(globe);
 }
