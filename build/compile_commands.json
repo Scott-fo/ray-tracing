@@ -11,6 +11,11 @@
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/box.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/box.cpp",
+  "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/box.cpp"
+},
+{
+  "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
   "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/bvh.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/bvh.cpp"
 },
@@ -18,6 +23,11 @@
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
   "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/camera.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/camera.cpp"
+},
+{
+  "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/hittable.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable.cpp",
+  "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable.cpp"
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",

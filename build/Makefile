@@ -177,6 +177,33 @@ src/aarect.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aarect.cpp.s
 .PHONY : src/aarect.cpp.s
 
+src/box.o: src/box.cpp.o
+
+.PHONY : src/box.o
+
+# target to build an object file
+src/box.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/box.cpp.o
+.PHONY : src/box.cpp.o
+
+src/box.i: src/box.cpp.i
+
+.PHONY : src/box.i
+
+# target to preprocess a source file
+src/box.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/box.cpp.i
+.PHONY : src/box.cpp.i
+
+src/box.s: src/box.cpp.s
+
+.PHONY : src/box.s
+
+# target to generate assembly for a file
+src/box.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/box.cpp.s
+.PHONY : src/box.cpp.s
+
 src/bvh.o: src/bvh.cpp.o
 
 .PHONY : src/bvh.o
@@ -230,6 +257,33 @@ src/camera.s: src/camera.cpp.s
 src/camera.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
+
+src/hittable.o: src/hittable.cpp.o
+
+.PHONY : src/hittable.o
+
+# target to build an object file
+src/hittable.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hittable.cpp.o
+.PHONY : src/hittable.cpp.o
+
+src/hittable.i: src/hittable.cpp.i
+
+.PHONY : src/hittable.i
+
+# target to preprocess a source file
+src/hittable.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hittable.cpp.i
+.PHONY : src/hittable.cpp.i
+
+src/hittable.s: src/hittable.cpp.s
+
+.PHONY : src/hittable.s
+
+# target to generate assembly for a file
+src/hittable.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/hittable.cpp.s
+.PHONY : src/hittable.cpp.s
 
 src/hittable_list.o: src/hittable_list.cpp.o
 
@@ -462,12 +516,18 @@ help:
 	@echo "... src/aarect.o"
 	@echo "... src/aarect.i"
 	@echo "... src/aarect.s"
+	@echo "... src/box.o"
+	@echo "... src/box.i"
+	@echo "... src/box.s"
 	@echo "... src/bvh.o"
 	@echo "... src/bvh.i"
 	@echo "... src/bvh.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
+	@echo "... src/hittable.o"
+	@echo "... src/hittable.i"
+	@echo "... src/hittable.s"
 	@echo "... src/hittable_list.o"
 	@echo "... src/hittable_list.i"
 	@echo "... src/hittable_list.s"
