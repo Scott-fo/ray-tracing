@@ -3,6 +3,7 @@
 
 #include "hittable.h"
 #include "material.h"
+#include "vec3.h"
 #include <memory>
 
 class sphere : public hittable {
@@ -17,6 +18,9 @@ public:
                             aabb &output_box) const override;
 
   virtual ~sphere();
+
+private:
+  static void get_sphere_uv(const point3 &p, double &u, double &v);
 
 public:
   point3 center;

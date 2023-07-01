@@ -312,6 +312,33 @@ src/ray.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/ray.cpp.s
 .PHONY : src/ray.cpp.s
 
+src/scene.o: src/scene.cpp.o
+
+.PHONY : src/scene.o
+
+# target to build an object file
+src/scene.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/scene.cpp.o
+.PHONY : src/scene.cpp.o
+
+src/scene.i: src/scene.cpp.i
+
+.PHONY : src/scene.i
+
+# target to preprocess a source file
+src/scene.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/scene.cpp.i
+.PHONY : src/scene.cpp.i
+
+src/scene.s: src/scene.cpp.s
+
+.PHONY : src/scene.s
+
+# target to generate assembly for a file
+src/scene.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/scene.cpp.s
+.PHONY : src/scene.cpp.s
+
 src/sphere.o: src/sphere.cpp.o
 
 .PHONY : src/sphere.o
@@ -338,6 +365,33 @@ src/sphere.s: src/sphere.cpp.s
 src/sphere.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/sphere.cpp.s
 .PHONY : src/sphere.cpp.s
+
+src/texture.o: src/texture.cpp.o
+
+.PHONY : src/texture.o
+
+# target to build an object file
+src/texture.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture.cpp.o
+.PHONY : src/texture.cpp.o
+
+src/texture.i: src/texture.cpp.i
+
+.PHONY : src/texture.i
+
+# target to preprocess a source file
+src/texture.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture.cpp.i
+.PHONY : src/texture.cpp.i
+
+src/texture.s: src/texture.cpp.s
+
+.PHONY : src/texture.s
+
+# target to generate assembly for a file
+src/texture.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture.cpp.s
+.PHONY : src/texture.cpp.s
 
 # Help Target
 help:
@@ -369,9 +423,15 @@ help:
 	@echo "... src/ray.o"
 	@echo "... src/ray.i"
 	@echo "... src/ray.s"
+	@echo "... src/scene.o"
+	@echo "... src/scene.i"
+	@echo "... src/scene.s"
 	@echo "... src/sphere.o"
 	@echo "... src/sphere.i"
 	@echo "... src/sphere.s"
+	@echo "... src/texture.o"
+	@echo "... src/texture.i"
+	@echo "... src/texture.s"
 .PHONY : help
 
 

@@ -1,4 +1,7 @@
 #include "sphere.h"
+#include "math.h"
+#include "utils.h"
+#include "vec3.h"
 
 sphere::sphere() {}
 
@@ -33,6 +36,7 @@ bool sphere::hit(const ray &r, double t_min, double t_max,
   rec.p = r.at(rec.t);
   vec3 outward_normal = (rec.p - center) / radius;
   rec.set_face_normal(r, outward_normal);
+  get_sphere_uv(outward_normal, rec.u, rec.v);
   rec.mat_ptr = mat_ptr;
 
   return true;
@@ -43,4 +47,17 @@ bool sphere::bounding_box(double time0, double time1, aabb &output_box) const {
                     center + vec3(radius, radius, radius));
 
   return true;
+}
+
+void sphere::get_sphere_uv(const point3 &p, double &u, double &v) {
+  // p is a given point on the sphere of radius 1 and centered at origin
+  // u is the returned value bounded 0, 1 of the angle around the Y axis from
+  // x = -1 (2pi)
+  // v is the return value bounded 0, 1 of the angle from y=-1 to y=1 (pi)
+
+  auto theta = acos(-p.y());
+  auto phi = atan2(-p.z(), p.x()) + pi;
+
+  u = phi / (2 * pi);
+  v = theta / pi;
 }
