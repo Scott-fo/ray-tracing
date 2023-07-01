@@ -150,6 +150,33 @@ src/aabb.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aabb.cpp.s
 .PHONY : src/aabb.cpp.s
 
+src/aarect.o: src/aarect.cpp.o
+
+.PHONY : src/aarect.o
+
+# target to build an object file
+src/aarect.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aarect.cpp.o
+.PHONY : src/aarect.cpp.o
+
+src/aarect.i: src/aarect.cpp.i
+
+.PHONY : src/aarect.i
+
+# target to preprocess a source file
+src/aarect.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aarect.cpp.i
+.PHONY : src/aarect.cpp.i
+
+src/aarect.s: src/aarect.cpp.s
+
+.PHONY : src/aarect.s
+
+# target to generate assembly for a file
+src/aarect.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/aarect.cpp.s
+.PHONY : src/aarect.cpp.s
+
 src/bvh.o: src/bvh.cpp.o
 
 .PHONY : src/bvh.o
@@ -420,33 +447,6 @@ src/texture.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture.cpp.s
 .PHONY : src/texture.cpp.s
 
-src/xyrect.o: src/xyrect.cpp.o
-
-.PHONY : src/xyrect.o
-
-# target to build an object file
-src/xyrect.cpp.o:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/xyrect.cpp.o
-.PHONY : src/xyrect.cpp.o
-
-src/xyrect.i: src/xyrect.cpp.i
-
-.PHONY : src/xyrect.i
-
-# target to preprocess a source file
-src/xyrect.cpp.i:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/xyrect.cpp.i
-.PHONY : src/xyrect.cpp.i
-
-src/xyrect.s: src/xyrect.cpp.s
-
-.PHONY : src/xyrect.s
-
-# target to generate assembly for a file
-src/xyrect.cpp.s:
-	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/xyrect.cpp.s
-.PHONY : src/xyrect.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -459,6 +459,9 @@ help:
 	@echo "... src/aabb.o"
 	@echo "... src/aabb.i"
 	@echo "... src/aabb.s"
+	@echo "... src/aarect.o"
+	@echo "... src/aarect.i"
+	@echo "... src/aarect.s"
 	@echo "... src/bvh.o"
 	@echo "... src/bvh.i"
 	@echo "... src/bvh.s"
@@ -489,9 +492,6 @@ help:
 	@echo "... src/texture.o"
 	@echo "... src/texture.i"
 	@echo "... src/texture.s"
-	@echo "... src/xyrect.o"
-	@echo "... src/xyrect.i"
-	@echo "... src/xyrect.s"
 .PHONY : help
 
 

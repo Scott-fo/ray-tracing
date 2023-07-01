@@ -8,5 +8,6 @@ hittable_list two_spheres();
 hittable_list two_perlin_spheres();
 hittable_list earth();
 hittable_list simple_light();
+hittable_list cornell_box();
 
 #endif

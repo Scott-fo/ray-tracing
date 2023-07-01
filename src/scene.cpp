@@ -1,4 +1,5 @@
 #include "scene.h"
+#include "aarect.h"
 #include "bvh.h"
 #include "hittable_list.h"
 #include "material.h"
@@ -7,7 +8,6 @@
 #include "texture.h"
 #include "utils.h"
 #include "vec3.h"
-#include "xyrect.h"
 
 hittable_list random_scene() {
   hittable_list world;
@@ -101,6 +101,24 @@ hittable_list simple_light() {
 
   auto difflight = make_shared<diffuse_light>(colour(4, 4, 4));
   objects.add(make_shared<xy_rect>(3, 5, 1, 3, -2, difflight));
+
+  return objects;
+}
+
+hittable_list cornell_box() {
+  hittable_list objects;
+
+  auto red = make_shared<lambertian>(colour(0.65, 0.05, 0.05));
+  auto white = make_shared<lambertian>(colour(0.73, 0.73, 0.73));
+  auto green = make_shared<lambertian>(colour(0.12, 0.45, 0.15));
+  auto light = make_shared<diffuse_light>(colour(15, 15, 15));
+
+  objects.add(make_shared<yz_rect>(0, 555, 0, 555, 555, green));
+  objects.add(make_shared<yz_rect>(0, 555, 0, 555, 0, red));
+  objects.add(make_shared<xz_rect>(213, 343, 227, 332, 554, light));
+  objects.add(make_shared<xz_rect>(0, 555, 0, 555, 0, white));
+  objects.add(make_shared<xz_rect>(0, 555, 0, 555, 555, white));
+  objects.add(make_shared<xy_rect>(0, 555, 0, 555, 555, white));
 
   return objects;
 }
