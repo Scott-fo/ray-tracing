@@ -58,8 +58,13 @@ int main() {
     aperture = 0.1;
     break;
   case 2:
-  default:
     world = two_spheres();
+    lookfrom = point3(13, 2, 3);
+    lookat = point3(0, 0, 0);
+    break;
+  default:
+  case 3:
+    world = two_perlin_spheres();
     lookfrom = point3(13, 2, 3);
     lookat = point3(0, 0, 0);
     break;

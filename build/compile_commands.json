@@ -31,6 +31,11 @@
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/perlin.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/perlin.cpp",
+  "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/perlin.cpp"
+},
+{
+  "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
   "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++17 -o CMakeFiles/main.dir/src/ray.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/ray.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/ray.cpp"
 },

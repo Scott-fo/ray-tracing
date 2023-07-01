@@ -67,3 +67,15 @@ hittable_list two_spheres() {
 
   return objects;
 }
+
+hittable_list two_perlin_spheres() {
+  hittable_list objects;
+
+  auto pertext = make_shared<noise_texture>();
+  objects.add(make_shared<sphere>(point3(0, -1000, 0), 1000,
+                                  make_shared<lambertian>(pertext)));
+  objects.add(make_shared<sphere>(point3(0, 2, 0), 2,
+                                  make_shared<lambertian>(pertext)));
+
+  return objects;
+}

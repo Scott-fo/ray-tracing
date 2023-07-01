@@ -285,6 +285,33 @@ src/moving_sphere.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/moving_sphere.cpp.s
 .PHONY : src/moving_sphere.cpp.s
 
+src/perlin.o: src/perlin.cpp.o
+
+.PHONY : src/perlin.o
+
+# target to build an object file
+src/perlin.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/perlin.cpp.o
+.PHONY : src/perlin.cpp.o
+
+src/perlin.i: src/perlin.cpp.i
+
+.PHONY : src/perlin.i
+
+# target to preprocess a source file
+src/perlin.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/perlin.cpp.i
+.PHONY : src/perlin.cpp.i
+
+src/perlin.s: src/perlin.cpp.s
+
+.PHONY : src/perlin.s
+
+# target to generate assembly for a file
+src/perlin.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/perlin.cpp.s
+.PHONY : src/perlin.cpp.s
+
 src/ray.o: src/ray.cpp.o
 
 .PHONY : src/ray.o
@@ -420,6 +447,9 @@ help:
 	@echo "... src/moving_sphere.o"
 	@echo "... src/moving_sphere.i"
 	@echo "... src/moving_sphere.s"
+	@echo "... src/perlin.o"
+	@echo "... src/perlin.i"
+	@echo "... src/perlin.s"
 	@echo "... src/ray.o"
 	@echo "... src/ray.i"
 	@echo "... src/ray.s"
