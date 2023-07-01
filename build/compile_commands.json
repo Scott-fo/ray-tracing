@@ -26,6 +26,11 @@
 },
 {
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/constant_medium.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/constant_medium.cpp",
+  "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/constant_medium.cpp"
+},
+{
+  "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
   "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/hittable.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/hittable.cpp"
 },

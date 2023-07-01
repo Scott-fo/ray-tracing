@@ -258,6 +258,33 @@ src/camera.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/camera.cpp.s
 .PHONY : src/camera.cpp.s
 
+src/constant_medium.o: src/constant_medium.cpp.o
+
+.PHONY : src/constant_medium.o
+
+# target to build an object file
+src/constant_medium.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/constant_medium.cpp.o
+.PHONY : src/constant_medium.cpp.o
+
+src/constant_medium.i: src/constant_medium.cpp.i
+
+.PHONY : src/constant_medium.i
+
+# target to preprocess a source file
+src/constant_medium.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/constant_medium.cpp.i
+.PHONY : src/constant_medium.cpp.i
+
+src/constant_medium.s: src/constant_medium.cpp.s
+
+.PHONY : src/constant_medium.s
+
+# target to generate assembly for a file
+src/constant_medium.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/constant_medium.cpp.s
+.PHONY : src/constant_medium.cpp.s
+
 src/hittable.o: src/hittable.cpp.o
 
 .PHONY : src/hittable.o
@@ -525,6 +552,9 @@ help:
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
+	@echo "... src/constant_medium.o"
+	@echo "... src/constant_medium.i"
+	@echo "... src/constant_medium.s"
 	@echo "... src/hittable.o"
 	@echo "... src/hittable.i"
 	@echo "... src/hittable.s"
