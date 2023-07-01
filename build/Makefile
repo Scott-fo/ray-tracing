@@ -420,6 +420,33 @@ src/texture.cpp.s:
 	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/texture.cpp.s
 .PHONY : src/texture.cpp.s
 
+src/xyrect.o: src/xyrect.cpp.o
+
+.PHONY : src/xyrect.o
+
+# target to build an object file
+src/xyrect.cpp.o:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/xyrect.cpp.o
+.PHONY : src/xyrect.cpp.o
+
+src/xyrect.i: src/xyrect.cpp.i
+
+.PHONY : src/xyrect.i
+
+# target to preprocess a source file
+src/xyrect.cpp.i:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/xyrect.cpp.i
+.PHONY : src/xyrect.cpp.i
+
+src/xyrect.s: src/xyrect.cpp.s
+
+.PHONY : src/xyrect.s
+
+# target to generate assembly for a file
+src/xyrect.cpp.s:
+	$(MAKE) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/src/xyrect.cpp.s
+.PHONY : src/xyrect.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -462,6 +489,9 @@ help:
 	@echo "... src/texture.o"
 	@echo "... src/texture.i"
 	@echo "... src/texture.s"
+	@echo "... src/xyrect.o"
+	@echo "... src/xyrect.i"
+	@echo "... src/xyrect.s"
 .PHONY : help
 
 

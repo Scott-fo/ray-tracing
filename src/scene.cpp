@@ -7,6 +7,7 @@
 #include "texture.h"
 #include "utils.h"
 #include "vec3.h"
+#include "xyrect.h"
 
 hittable_list random_scene() {
   hittable_list world;
@@ -87,4 +88,19 @@ hittable_list earth() {
   auto globe = make_shared<sphere>(point3(0, 0, 0), 2, earth_surface);
 
   return hittable_list(globe);
+}
+
+hittable_list simple_light() {
+  hittable_list objects;
+
+  auto pertext = make_shared<noise_texture>(4);
+  objects.add(make_shared<sphere>(point3(0, -1000, 0), 1000,
+                                  make_shared<lambertian>(pertext)));
+  objects.add(make_shared<sphere>(point3(0, 2, 0), 2,
+                                  make_shared<lambertian>(pertext)));
+
+  auto difflight = make_shared<diffuse_light>(colour(4, 4, 4));
+  objects.add(make_shared<xy_rect>(3, 5, 1, 3, -2, difflight));
+
+  return objects;
 }

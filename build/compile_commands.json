@@ -53,5 +53,10 @@
   "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
   "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/texture.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/texture.cpp",
   "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/texture.cpp"
+},
+{
+  "directory": "/home/scottfo/Projects/languages/cpp/ray_tracing/build",
+  "command": "/usr/bin/c++   -I/home/scottfo/Projects/languages/cpp/ray_tracing/include    -std=gnu++2a -o CMakeFiles/main.dir/src/xyrect.cpp.o -c /home/scottfo/Projects/languages/cpp/ray_tracing/src/xyrect.cpp",
+  "file": "/home/scottfo/Projects/languages/cpp/ray_tracing/src/xyrect.cpp"
 }
 ]

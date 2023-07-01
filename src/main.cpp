@@ -15,26 +15,28 @@
 #include <iostream>
 #include <memory>
 
-colour ray_colour(const ray &r, const hittable &world, int depth) {
+colour ray_colour(const ray &r, const colour &background, const hittable &world,
+                  int depth) {
   hit_record rec;
 
   if (depth <= 0) {
     return colour(0, 0, 0);
   }
 
-  if (world.hit(r, 0.001, infinity, rec)) {
-    ray scattered;
-    colour attenuation;
-    if (rec.mat_ptr->scatter(r, rec, attenuation, scattered)) {
-      return attenuation * ray_colour(scattered, world, depth - 1);
-    }
-
-    return colour(0, 0, 0);
+  if (!world.hit(r, 0.001, infinity, rec)) {
+    return background;
   }
 
-  vec3 unit_direction = unit_vector(r.direction());
-  auto t = 0.5 * (unit_direction.y() + 1.0);
-  return (1.0 - t) * colour(1.0, 1.0, 1.0) + t * colour(0.5, 0.7, 1.0);
+  ray scattered;
+  colour attenuation;
+  colour emitted = rec.mat_ptr->emitted(rec.u, rec.v, rec.p);
+
+  if (!rec.mat_ptr->scatter(r, rec, attenuation, scattered)) {
+    return emitted;
+  }
+
+  return emitted +
+         attenuation * ray_colour(scattered, background, world, depth - 1);
 }
 
 int main() {
@@ -49,27 +51,43 @@ int main() {
   point3 lookat;
   auto vfov = 20.0;
   auto aperture = 0.0;
+  colour background(0.70, 0.80, 1.00);
 
-  switch (0) {
+  switch (5) {
   case 1:
     world = random_scene();
     lookfrom = point3(13, 2, 3);
     lookat = point3(0, 0, 0);
     aperture = 0.1;
     break;
+
   case 2:
     world = two_spheres();
     lookfrom = point3(13, 2, 3);
     lookat = point3(0, 0, 0);
     break;
+
   case 3:
     world = two_perlin_spheres();
     lookfrom = point3(13, 2, 3);
     lookat = point3(0, 0, 0);
     break;
-  default:
+
   case 4:
     world = earth();
+    lookfrom = point3(13, 2, 3);
+    lookat = point3(0, 0, 0);
+    break;
+
+  case 5:
+    world = simple_light();
+    background = colour(0, 0, 0);
+    lookfrom = point3(26, 3, 6);
+    lookat = point3(0, 2, 0);
+    break;
+
+  default:
+    world = two_spheres();
     lookfrom = point3(13, 2, 3);
     lookat = point3(0, 0, 0);
     break;
@@ -91,7 +109,7 @@ int main() {
         auto u = double(i + random_double()) / (image_width - 1);
         auto v = double(j + random_double()) / (image_height - 1);
         ray r = cam.get_ray(u, v);
-        pixel_colour += ray_colour(r, world, max_depth);
+        pixel_colour += ray_colour(r, background, world, max_depth);
       }
 
       write_colour(std::cout, pixel_colour, samples_per_pixel);

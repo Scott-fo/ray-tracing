@@ -6,11 +6,16 @@
 #include "texture.h"
 #include "utils.h"
 #include "vec3.h"
+#include <memory>
 
 struct hit_record;
 
 class material {
 public:
+  virtual colour emitted(double u, double v, const point3 &p) const {
+    return colour(0, 0, 0);
+  }
+
   virtual bool scatter(const ray &r_in, const hit_record &rec,
                        colour &attenuation, ray &scattered) const = 0;
 };
@@ -94,6 +99,24 @@ private:
 
     return r0 + (1 - r0) * pow((1 - cosine), 5);
   }
+};
+
+class diffuse_light : public material {
+public:
+  diffuse_light(shared_ptr<texture> a) : emit(a) {}
+  diffuse_light(colour c) : emit(make_shared<solid_colour>(c)) {}
+
+  virtual bool scatter(const ray &r_in, const hit_record &rec,
+                       colour &attenuation, ray &scattered) const override {
+    return false;
+  }
+
+  virtual colour emitted(double u, double v, const point3 &p) const override {
+    return emit->value(u, v, p);
+  }
+
+public:
+  shared_ptr<texture> emit;
 };
 
 #endif
